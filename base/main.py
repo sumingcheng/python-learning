@@ -75,15 +75,15 @@
 # print(list[0:5:2])  # 输出 [1, 3, 5]
 
 
-# 定义一个包含商品信息的列表，每个商品是一个字典，包含名称和类别
-products = [
-    {"name": "apple", "category": "fruit"},
-    {"name": "broccoli", "category": "vegetable"},
-    {"name": "banana", "category": "fruit"},
-]
-
-# 初始化一个空字典，用于存储分组后的商品
-grouped_products = {}
+# # 定义一个包含商品信息的列表，每个商品是一个字典，包含名称和类别
+# products = [
+#     {"name": "apple", "category": "fruit"},
+#     {"name": "broccoli", "category": "vegetable"},
+#     {"name": "banana", "category": "fruit"},
+# ]
+#
+# # 初始化一个空字典，用于存储分组后的商品
+# grouped_products = {}
 
 # 遍历每个商品
 # for product in products:
@@ -96,7 +96,18 @@ grouped_products = {}
 #
 # # 打印分组后的商品
 # print(grouped_products)  # 输出: {'fruit': ['apple', 'banana'], 'vegetable': ['broccoli']}
+#
+# with open('mini.jpg', 'rb') as file:  # 注意 'rb' 模式表示二进制读取
+#     data = file.read()
+#     print(type(data))  # 输出: <class 'bytes'>
 
-with open('mini.jpg', 'rb') as file:  # 注意 'rb' 模式表示二进制读取
-    data = file.read()
-    print(type(data))  # 输出: <class 'bytes'>
+
+# a = {}
+# print(type(a))  # 输出: <class 'dict'>
+
+
+# squares = [x ** 2 for x in range(10)]
+# print(squares)  # 输出: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+square_dict = {x: x ** 2 for x in (2, 4, 6)}
+print(square_dict)  # 输出: {2: 4, 4: 16, 6: 36}
