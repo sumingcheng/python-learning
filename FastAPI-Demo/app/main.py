@@ -21,3 +21,14 @@ async def data(request: DataModel):
         return {"message": "failure"}
     else:
         raise HTTPException(status_code=400, detail="Invalid data value")
+
+
+class AdditionInput(BaseModel):
+    number1: float
+    number2: float
+
+
+@app.post("/add")
+async def add_numbers(input_data: AdditionInput):
+    total = input_data.number1 + input_data.number2
+    return {"result": int(total)}
