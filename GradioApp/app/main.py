@@ -14,8 +14,8 @@ def login(username, password):
 iface = gr.Interface(
     fn=login,
     inputs=[
-        gc.Textbox(label="Username"),  # 更新这行
-        gc.Textbox(label="Password", type="password")  # 更新这行
+        gc.Textbox(label="Username"),
+        gc.Textbox(label="Password", type="password")
     ],
     outputs="text"
 )
