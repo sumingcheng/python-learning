@@ -1,14 +1,9 @@
 # fastapi_app.py
 from fastapi import FastAPI, Depends
-from pydantic import BaseModel
 from main import login
+from models import LoginData
 
 app = FastAPI()
-
-
-class LoginData(BaseModel):
-    username: str
-    password: str
 
 
 @app.post("/login/")
