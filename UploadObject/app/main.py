@@ -1,19 +1,26 @@
 # upload.py
 from qcloud_cos import CosConfig
 from qcloud_cos import CosS3Client
+import os
 import base64
 import time
 import json
 
-with open('env.json', 'r', encoding='utf-8') as file:
+# 获取当前脚本的绝对路径
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# 构建 env.json 文件的绝对路径
+env_path = os.path.join(script_dir, 'env.json')
+
+with open(env_path, 'r', encoding='utf-8') as file:
     data = json.load(file)
 print(data)
 
 # 配置信息
 config = CosConfig(
     Region='ap-shanghai',
-    SecretId=data.SecretId,
-    SecretKey=data.SecretKey,
+    SecretId=data['SecretId'],
+    SecretKey=data['SecretKey'],
 )
 client = CosS3Client(config)
 
@@ -22,7 +29,7 @@ def upload_image(base64_str, filename):
     # 解码 Base64 图片
     decoded_image = base64.b64decode(base64_str)
 
-    time_file = f'SD_Photo_Output/{str(int(time.time()))}-{filename}'
+    time_file = f'SD_Photo_Output/{str(int(time.time() * 1000))}-{filename}'
 
     # 上传图片
     try:
