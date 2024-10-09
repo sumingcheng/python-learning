@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import gradio as gr
 
 # 导入输入组件
