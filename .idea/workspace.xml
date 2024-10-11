@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5027ef79-4717-473c-9085-d55e08cf9ef1" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/basis/dataType.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python-Learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python-Learning.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/IteratorsAndGenerators.py" beforeDir="false" afterPath="$PROJECT_DIR$/basis/IteratorsAndGenerators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/class.py" beforeDir="false" afterPath="$PROJECT_DIR$/basis/class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/def.py" beforeDir="false" afterPath="$PROJECT_DIR$/basis/def.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/basis/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/mini.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/basis/mini.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/nestedLists.py" beforeDir="false" afterPath="$PROJECT_DIR$/basis/nestedLists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/nonlocal.py" beforeDir="false" afterPath="$PROJECT_DIR$/basis/nonlocal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/basis/queue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/stackSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/basis/stackSpace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/traverse.py" beforeDir="false" afterPath="$PROJECT_DIR$/basis/traverse.py" afterDir="false" />
+    <list default="true" id="5027ef79-4717-473c-9085-d55e08cf9ef1" name="更改" comment="fix: rename">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,12 +92,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728647253858</updated>
-      <workItem from="1728647255092" duration="3366000" />
+      <workItem from="1728647255092" duration="4293000" />
     </task>
+    <task id="LOCAL-00001" summary="add: 基础类型">
+      <option name="closed" value="true" />
+      <created>1728652060263</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728652060263</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix: rename">
+      <option name="closed" value="true" />
+      <created>1728652103122</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728652103122</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add: 基础类型" />
+    <MESSAGE value="fix: rename" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: rename" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_learning$dataType.coverage" NAME="dataType 覆盖结果" MODIFIED="1728647639130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basis" />
