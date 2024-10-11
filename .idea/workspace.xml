@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5027ef79-4717-473c-9085-d55e08cf9ef1" name="更改" comment="fix: yml" />
+    <list default="true" id="5027ef79-4717-473c-9085-d55e08cf9ef1" name="更改" comment="fix: git" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728647253858</updated>
-      <workItem from="1728647255092" duration="4617000" />
+      <workItem from="1728647255092" duration="4662000" />
     </task>
     <task id="LOCAL-00001" summary="add: 基础类型">
       <option name="closed" value="true" />
@@ -115,7 +115,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728653218796</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix: yml">
+      <option name="closed" value="true" />
+      <created>1728653234817</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728653234817</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix: git">
+      <option name="closed" value="true" />
+      <created>1728653255790</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728653255790</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +141,8 @@
     <MESSAGE value="add: 基础类型" />
     <MESSAGE value="fix: rename" />
     <MESSAGE value="fix: yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: yml" />
+    <MESSAGE value="fix: git" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: git" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_learning$dataType.coverage" NAME="dataType 覆盖结果" MODIFIED="1728647639130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basis" />
