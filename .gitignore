@@ -164,3 +164,4 @@ project-env/
 /venv/
 venv/
 fastapi-demo/project-env/
+.idea/
