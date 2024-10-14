@@ -177,7 +177,7 @@ def main():
             print(f"错误：{e}")
     else:
         # 运行 FastAPI 服务器
-        uvicorn.run(app, host="0.0.0.0", port=9000)
+        uvicorn.run(app, host="0.0.0.0", port=13000)
 
 
 if __name__ == "__main__":
