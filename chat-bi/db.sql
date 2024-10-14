@@ -1,3 +1,4 @@
+use chat_bi;
 -- 创建 products 表
 CREATE TABLE products
 (
