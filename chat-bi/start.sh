@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 获取脚本所在目录
-SHELL_FOLDER=$(dirname $(readlink -f "$0"))
+SHELL_FOLDER=$(cd "$(dirname "$0")"; pwd)
 echo "Script directory: $SHELL_FOLDER"
 
 # 输出当前的 PYTHONPATH
