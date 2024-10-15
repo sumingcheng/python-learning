@@ -1,7 +1,6 @@
-from logging_config import logger
+from .logging_config import logger
 from pymilvus import connections, FieldSchema, CollectionSchema, DataType, Collection
 import os
-import numpy as np
 from .embedding_model import get_text_embedding
 
 
@@ -25,7 +24,7 @@ def get_or_create_collection():
         fields = [
             FieldSchema(name="id", dtype=DataType.INT64, is_primary=True, auto_id=True),
             FieldSchema(name="question", dtype=DataType.VARCHAR, max_length=512),
-            FieldSchema(name="embedding", dtype=DataType.FLOAT_VECTOR, dim=1536),  # 修改维度为1536
+            FieldSchema(name="embedding", dtype=DataType.FLOAT_VECTOR, dim=1536),
             FieldSchema(name="sql_query", dtype=DataType.VARCHAR, max_length=2048)
         ]
         schema = CollectionSchema(fields, description="Question embeddings")
@@ -53,7 +52,6 @@ def insert_data(collection, questions, sql_queries):
     ]
     collection.insert(data)
     collection.load()
-
 
 
 # 搜索相似问题
