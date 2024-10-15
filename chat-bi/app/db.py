@@ -1,5 +1,5 @@
 import os
-import logging
+from logging_config import logger
 import mysql.connector
 
 
@@ -20,7 +20,7 @@ def execute_sql_query(sql_query):
     try:
         conn = get_db_connection()
         cursor = conn.cursor()
-        logging.info(f"执行 SQL 查询: {sql_query}")
+        logger.info(f"执行 SQL 查询: {sql_query}")
         cursor.execute(sql_query)
         columns = cursor.column_names
         results = cursor.fetchall()
@@ -28,5 +28,5 @@ def execute_sql_query(sql_query):
         conn.close()
         return {"columns": columns, "data": results}
     except mysql.connector.Error as err:
-        logging.error(f"数据库错误: {err}")
+        logger.error(f"数据库错误: {err}")
         raise ValueError("数据库查询失败。")

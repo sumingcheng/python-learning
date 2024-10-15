@@ -1,6 +1,6 @@
 import os
-import logging
-import re  # 用于正则表达式处理
+from logging_config import logger
+import re
 import openai
 from openai import OpenAIError
 
@@ -45,7 +45,7 @@ def parse_query_to_sql(user_query):
             stop=None
         )
         raw_response = response['choices'][0]['message']['content'].strip()
-        logging.info(f"原始 OpenAI 响应: {raw_response}")
+        logger.info(f"原始 OpenAI 响应: {raw_response}")
 
         # 提取纯粹的 SQL 查询
         sql_query = raw_response
@@ -61,8 +61,8 @@ def parse_query_to_sql(user_query):
             if select_index != -1:
                 sql_query = raw_response[select_index:].strip()
 
-        logging.info(f"提取的 SQL 查询: {sql_query}")
+        logger.info(f"提取的 SQL 查询: {sql_query}")
         return sql_query
     except OpenAIError as e:
-        logging.error(f"OpenAI API 错误: {e}")
+        logger.error(f"OpenAI API 错误: {e}")
         raise ValueError("解析查询失败，请稍后重试。")
